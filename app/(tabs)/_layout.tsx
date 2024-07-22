@@ -15,6 +15,15 @@ export default function TabLayout() {
         headerShown: false,
       }}>
       <Tabs.Screen
+        name="teegee"
+        options={{
+          title: 'ThankGod',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'code-slash' : 'person-circle-outline'} color={color} />
+          ),
+        }}
+      />
+      {/* <Tabs.Screen
         name="index"
         options={{
           title: 'Home',
@@ -22,25 +31,17 @@ export default function TabLayout() {
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
         }}
-      />
+      /> */}
       <Tabs.Screen
-        name="explore"
+        name="projects"
         options={{
-          title: 'Explore',
+          title: 'Projects',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'code-slash-outline' : 'logo-github' } color={color} />
           ),
         }}
       />
-      <Tabs.Screen
-        name="teegee"
-        options={{
-          title: 'ThankGod',
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
-          ),
-        }}
-      />
+
     </Tabs>
   );
 }
