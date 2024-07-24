@@ -8,15 +8,15 @@ import { FontAwesome6 } from '@expo/vector-icons';
 const HomeScreen = () => {
     return (
         <SafeAreaView style={{ flex: 1, width: '100%', height: '100%', backgroundColor: '#FC97EC' }}>
-            <ImageBackground style={{ flex: 1, width: '100%', height: '100%', backgroundColor: '#FC97EC' }} source={require('@/assets/images/ThankGod.jpg')}>
+            <ImageBackground style={{ width: '100%', height: '100%', }} source={require('@/assets/images/ThankGod.jpg')}>
                 <ScrollView showsVerticalScrollIndicator={false} style={{ marginHorizontal: 15, }}>
                     <View style={{ marginTop: '10%', }}>
                         <View style={{ flexDirection: 'row' }}>
-                            <Text style={{ fontWeight: '500', fontSize: 18, color: '#F3535D' }}>Hello there, </Text>
+                            <Text style={{ fontWeight: '700', fontSize: 18, color: '#FFFFFF' }}>Hello there, </Text>
                             <HelloWave />
                         </View>
-                        <Text style={{ fontWeight: '500', fontSize: 18, color: '#F3535D' }}>I'm</Text>
-                        <Text style={{ fontWeight: '800', fontSize: 36, }}>ThankGod Uzochukwu</Text>
+                        <Text style={{ fontWeight: '700', fontSize: 18, color: '#FFFFFF' }}>I'm</Text>
+                        <Text style={{ fontWeight: '900', fontSize: 36, }}>ThankGod Uzochukwu</Text>
                         <Text style={{ fontWeight: '700', fontSize: 24, color: '#becead' }}>React Native Developer</Text>
                     </View>
                     <Text style={{ fontWeight: '500', fontSize: 16, color: '#baebae', textAlign: 'center' }}>thankgoduzochukwu.com@gmail.com</Text>
@@ -40,7 +40,7 @@ const HomeScreen = () => {
                     <View
                         style={{
                             marginTop: 24,
-                            backgroundColor: '#beebae',
+                            backgroundColor: 'rgba(190, 235, 174, 0.5)',
                             alignItems: 'center',
                             justifyContent: 'center',
                             height: '12%',
@@ -48,11 +48,11 @@ const HomeScreen = () => {
                             borderBottomRightRadius: 70,
                         }}
                     >
-                        <Text style={{ fontWeight: '600', fontSize: 24, color: 'white' }}>About Me</Text>
+                        <Text style={{ fontWeight: '700', fontSize: 24, color: 'white' }}>About Me</Text>
                         <Text style={{ color: '#0139A6', fontWeight: '500', }}>Experienced React Native Developer with over 5 years of experience in building and maintaining mobile applications. Proficient in JavaScript, TypeScript, and modern front-end technologies. Adept at collaborating with cross-functional teams to deliver high-quality software solutions.</Text>
                     </View>
-                    <View style={{ backgroundColor: '#bee', marginTop: 10, justifyContent: 'center', height: '18%', borderTopRightRadius: 70, borderBottomLeftRadius: 70 }}>
-                        <Text style={{ fontWeight: '600', fontSize: 24, color: 'white', textAlign: 'center' }}>TECHNICAL SKILLS</Text>
+                    <View style={{ backgroundColor: 'rgba(187, 238, 238, 0.5)', marginTop: 10, justifyContent: 'center', height: '18%', borderTopRightRadius: 70, borderBottomLeftRadius: 70 }}>
+                        <Text style={{ fontWeight: '700', fontSize: 24, color: 'white', textAlign: 'center' }}>TECHNICAL SKILLS</Text>
                         <View style={{ marginLeft: 20 }}>
                             <Text style={{ fontWeight: '600', fontSize: 18 }}>Mobile Development</Text>
                             <Text style={{ color: '#0139A6', fontWeight: '500' }}>
@@ -84,7 +84,7 @@ const HomeScreen = () => {
                     </View>
                     <View
                         style={{
-                            backgroundColor: '#bae',
+                            backgroundColor: 'rgba(187, 170, 238, 0.5)',
                             marginTop: 10,
                             alignItems: 'center',
                             justifyContent: 'center',
@@ -92,16 +92,15 @@ const HomeScreen = () => {
                             borderBottomLeftRadius: 200,
                             borderTopRightRadius: 10,
                             borderBottomRightRadius: 10,
-                            marginBottom: 100,
                         }}
                     >
-                        <Text style={{ fontWeight: '600', fontSize: 24, marginTop: 10, color: 'grey', }}>PROFESSIONAL EXPERIENCE</Text>
-                        <View style={{ marginTop: 8, borderTopRightRadius: 300, borderBottomLeftRadius: 300, backgroundColor: '#bee', }}>
-                            <Text style={{ fontWeight: '700', fontSize: 20 }}>React Native Developer (Intern)</Text>
+                        <Text style={{ fontWeight: '700', fontSize: 24, marginTop: 10, color: 'white', }}>PROFESSIONAL EXPERIENCE</Text>
+                        <View style={{ marginTop: 8, borderTopRightRadius: 300, borderBottomLeftRadius: 300, backgroundColor: 'rgba(187, 238, 238, 0.6)', }}>
+                            <Text style={{ fontWeight: '700', fontSize: 20, }}>React Native Developer (Intern)</Text>
                             <Text style={{ fontWeight: '600', fontSize: 18 }}>SmartHive Tech Solution</Text>
                             <Text style={{ fontWeight: '500', fontSize: 16 }}>2023 – present</Text>
                             <View style={{}}>
-                                <Text style={{ color: '#0139A6', fontWeight: '500' }}>
+                                <Text style={{ color: '#fff', fontWeight: '500', marginHorizontal: 10, lineHeight: 26 }}>
                                     • I write codes to build apps from scratch.{'\n'}
                                     • I maintain existing codes built for existing apps.{'\n'}
                                     • I write basic React components and hooks to implement UI and
@@ -117,12 +116,12 @@ const HomeScreen = () => {
                                 </Text>
                             </View>
                         </View>
-                        <View style={{ marginTop: 8, borderTopLeftRadius: 300, borderBottomRightRadius: 300, backgroundColor: '#bababa', }}>
-                            <Text style={{ fontWeight: '700', fontSize: 20 }}>React Native Developer</Text>
+                        <View style={{ marginTop: 8, borderTopLeftRadius: 300, borderBottomRightRadius: 300, backgroundColor: 'rgba(186, 186, 186, 0.5)', }}>
+                            <Text style={{ fontWeight: '700', fontSize: 20, }}>React Native Developer</Text>
                             <Text style={{ fontWeight: '600', fontSize: 18 }}>GidiCodes</Text>
                             <Text style={{ fontWeight: '500', fontSize: 16 }}>2024 – present</Text>
                             <View>
-                                <Text style={{ color: '#0139A6', fontWeight: '500', }}>
+                                <Text style={{ color: '#fff', fontWeight: '500', marginHorizontal: 10, lineHeight: 26}}>
                                     • I write codes to build apps from scratch.{'\n'}
                                     • I maintain existing codes built for existing apps.{'\n'}
                                     • I write basic React components and hooks to implement UI and
@@ -139,6 +138,11 @@ const HomeScreen = () => {
                             </View>
                         </View>
                     </View>
+                    <TouchableOpacity style={{ marginBottom: 120, marginTop: 10, backgroundColor: 'rgba(190, 235, 174, 0.5)', alignItems: 'center', height: 40, justifyContent: 'center', borderRadius: 8 }}>
+                        <A href="https://flowcv.com/resume/lnvi0stb21">
+                            <Text style={{ fontWeight: '700', fontSize: 20, color: 'white' }}>See More...</Text>
+                        </A>
+                    </TouchableOpacity>
                 </ScrollView>
             </ImageBackground>
         </SafeAreaView>
