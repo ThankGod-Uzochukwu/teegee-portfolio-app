@@ -19,7 +19,7 @@ export default function TabLayout() {
         options={{
           title: 'ThankGod',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'person-circle-outline'} color={color} />
+            <TabBarIcon name={focused ? 'code-slash' : 'person-circle-outline'} color='#097070' />
           ),
         }}
       />
@@ -29,7 +29,7 @@ export default function TabLayout() {
         options={{
           title: 'Projects',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash-outline' : 'logo-github' } color={color} />
+            <TabBarIcon name={focused ? 'code-slash-outline' : 'logo-github' } color='#0139A6' />
           ),
         }}
       />

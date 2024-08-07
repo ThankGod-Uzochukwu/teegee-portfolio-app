@@ -11,14 +11,15 @@ const ProjectScreen = () => {
     const spinValue = useRef(new Animated.Value(0)).current;
 
     useEffect(() => {
-        Animated.loop(
+        const spinAnimation = Animated.loop(
             Animated.timing(spinValue, {
                 toValue: 1,
-                duration: 5000,
+                duration: 15000,
                 easing: Easing.linear,
                 useNativeDriver: true,
             })
-        ).start();
+        );
+        spinAnimation.start();
     }, [spinValue]);
 
     const spin = spinValue.interpolate({
@@ -46,9 +47,9 @@ const ProjectScreen = () => {
                     </View>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', marginHorizontal: 10, gap: 6, marginTop: 8, backgroundColor: '#bee', width: '40%', height: 30, justifyContent: 'center', borderRadius: 20, }}>
                         <A href="https://github.com/ThankGod-Uzochukwu/rano">
-                            <AntDesign name="github" size={24} color="#000000" />
+                            <AntDesign name="github" size={24} color="#fff" />
                         </A>
-                        <Text style={{ fontWeight: '600', fontSize: 16, }}>Rano Project</Text>
+                        <Text style={{ fontWeight: '600', fontSize: 16, color:"#fff" }}>Rano Project</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -61,9 +62,9 @@ const ProjectScreen = () => {
                     </View>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', marginHorizontal: 10, gap: 6, marginTop: 8, backgroundColor: '#bee', width: '40%', height: 30, justifyContent: 'center', borderRadius: 20, }}>
                         <A href="https://github.com/ThankGod-Uzochukwu/todo-app">
-                            <AntDesign name="github" size={24} color="#000000" />
+                            <AntDesign name="github" size={24} color="#fff" />
                         </A>
-                        <Text style={{ fontWeight: '600', fontSize: 16, }}>Todo Project</Text>
+                        <Text style={{ fontWeight: '600', fontSize: 16, color:"#fff" }}>Todo Project</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -76,9 +77,9 @@ const ProjectScreen = () => {
                     </View>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', marginHorizontal: 10, gap: 6, marginTop: 8, backgroundColor: '#bee', width: '40%', height: 30, justifyContent: 'center', borderRadius: 20, }}>
                         <A href="https://github.com/ThankGod-Uzochukwu/teegee-portfolio-app">
-                            <AntDesign name="github" size={24} color="#000000" />
+                            <AntDesign name="github" size={24} color="#fff" />
                         </A>
-                        <Text style={{ fontWeight: '600', fontSize: 16, }}>Git Repo</Text>
+                        <Text style={{ fontWeight: '600', fontSize: 16, color:"#fff" }}>Git Repo</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -90,7 +91,7 @@ const ProjectScreen = () => {
                 <View style={{ marginTop: 12, marginBottom: "20%" }}>
                     <Text style={{ fontWeight: '700', fontSize: 24, color: '#097070' }}>More</Text>
                     <View>
-                        <Text style={{ fontWeight: '600', fontSize: 18, color:'#8FADE7' }}>
+                        <Text style={{ fontWeight: '600', fontSize: 18, color: '#8FADE7' }}>
                             Not just only TECH, I'm also a Content, Copy, and Technical Writer.
                         </Text>
                         <TouchableOpacity style={{ marginTop: 10, backgroundColor: '#beebae', alignItems: 'center', height: 40, justifyContent: 'center', borderRadius: 8, flexDirection: 'row', gap: 6, }}>

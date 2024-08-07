@@ -121,7 +121,7 @@ const HomeScreen = () => {
                             <Text style={{ fontWeight: '600', fontSize: 18 }}>GidiCodes</Text>
                             <Text style={{ fontWeight: '500', fontSize: 16 }}>2024 – present</Text>
                             <View>
-                                <Text style={{ color: '#fff', fontWeight: '500', marginHorizontal: 10, lineHeight: 26}}>
+                                <Text style={{ color: '#fff', fontWeight: '500', marginHorizontal: 10, lineHeight: 26 }}>
                                     • I write codes to build apps from scratch.{'\n'}
                                     • I maintain existing codes built for existing apps.{'\n'}
                                     • I write basic React components and hooks to implement UI and
@@ -138,7 +138,7 @@ const HomeScreen = () => {
                             </View>
                         </View>
                     </View>
-                    <TouchableOpacity style={{ marginBottom: 120, marginTop: 10, backgroundColor: 'rgba(190, 235, 174, 0.5)', alignItems: 'center', height: 40, justifyContent: 'center', borderRadius: 8 }}>
+                    <TouchableOpacity style={{ marginBottom: 200, marginTop: 10, backgroundColor: 'rgba(190, 235, 174, 0.5)', alignItems: 'center', height: 40, justifyContent: 'center', borderRadius: 8 }}>
                         <A href="https://flowcv.com/resume/lnvi0stb21">
                             <Text style={{ fontWeight: '700', fontSize: 20, color: 'white' }}>See More...</Text>
                         </A>
