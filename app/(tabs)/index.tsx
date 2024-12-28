@@ -116,6 +116,7 @@ const HomeScreen = () => {
                                 </Text>
                             </View>
                         </View>
+
                         <View style={{ marginTop: 8, borderTopLeftRadius: 300, borderBottomRightRadius: 300, backgroundColor: 'rgba(186, 186, 186, 0.5)', }}>
                             <Text style={{ fontWeight: '700', fontSize: 20, }}>React Native Developer</Text>
                             <Text style={{ fontWeight: '600', fontSize: 18 }}>GidiCodes</Text>
@@ -134,6 +135,23 @@ const HomeScreen = () => {
                                     managers using tools like Git or Slack.{'\n'}
                                     • I maintain the state of the app using Redux and Redux toolkit.{'\n'}
                                     • I use Axios to make API request.
+                                </Text>
+                            </View>
+                        </View>
+
+                        <View style={{ marginTop: 8, borderTopLeftRadius: 300, borderBottomRightRadius: 300, backgroundColor: 'rgba(286, 086, 286, 0.5)', }}>
+                            <Text style={{ fontWeight: '700', fontSize: 20, }}>React Native Developer</Text>
+                            <Text style={{ fontWeight: '600', fontSize: 18 }}>Whelb</Text>
+                            <Text style={{ fontWeight: '500', fontSize: 16 }}>Contract (3 Months)</Text>
+                            <View>
+                                <Text style={{ color: '#fff', fontWeight: '500', marginHorizontal: 10, lineHeight: 26 }}>
+                                    • I write codes to build apps from scratch.{'\n'}
+                                    • I maintain existing codes built for existing apps.{'\n'}
+                                    • I write basic React components and hooks to implement UI and
+                                    app functionality.{'\n'}
+                                    • I collaborate with other developers, designers, and project
+                                    managers using tools like Git{'\n'}
+                                    {/* • I use Axios to make API request. */}
                                 </Text>
                             </View>
                         </View>
